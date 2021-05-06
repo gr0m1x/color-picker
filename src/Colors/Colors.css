@@ -1,0 +1,49 @@
+.colors-list {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 20px);
+
+    width: 150px;
+    margin: 0;
+    padding: 10px 0;
+
+    list-style: none;
+
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+}
+
+.colors-list::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 22px;
+
+    display: block;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color:  #FFFFFF transparent transparent #FFFFFF;
+
+    transform: rotate(45deg);
+}
+
+.colors-list__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.colors-list__item:hover {
+    background-color: #66CDAA;
+}
+
+.colors-list__item-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+}

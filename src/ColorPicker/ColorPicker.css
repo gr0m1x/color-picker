@@ -1,0 +1,67 @@
+.color-picker__body {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 500px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #dadada;
+}
+
+.current-hex {
+    flex-grow: 1;
+    padding: 15px 25px;
+
+    text-transform: uppercase;
+}
+
+.current-color__body {
+    position: relative;
+
+    padding: 15px;
+
+    border-left: 1px solid #dadada;
+    cursor: pointer;
+}
+
+.current-color__body:hover .current-color{
+    opacity: 0.7;
+}
+
+.current-color {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.colors {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    padding: 15px;
+
+    border-left: 1px solid #dadada;
+    cursor: pointer;
+}
+.colors__icon {
+    width: 16px;
+    height: 16px;
+    fill: #666666;
+
+    transition: all 200ms ease-in-out;
+}
+.active .colors__icon {
+    transform: rotateX(180deg);
+}
+
+.colors:hover .colors__icon{
+    opacity: 0.7;
+}
